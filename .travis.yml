@@ -1,8 +1,11 @@
 language: node_js
 node_js:
-  - "7"
-services:
-  - mongodb
+  - "8"
+  - "9"
+services: mongodb
+cache:
+  directories:
+    - "node_modules"
 install:
   - npm install
 deploy:
